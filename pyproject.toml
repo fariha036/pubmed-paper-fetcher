@@ -1,0 +1,28 @@
+[project]
+name = "get-papers-list"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Farihatam",email = "123182586+Farihatam@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests (>=2.32.4,<3.0.0)",
+    "typer[all] (>=0.16.0,<0.17.0)"
+]
+
+[tool.poetry]
+packages = [{include = "get_papers_list", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+types-requests = "^2.32.4.20250611"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-papers-list = "get_papers_list.__main__:app"
+papers-list = "get_papers_list.__main__:app"
