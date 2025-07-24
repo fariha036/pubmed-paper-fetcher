@@ -77,8 +77,6 @@ poetry run get-papers-list "cancer immunotherapy" -f results.csv
 - Error handling for API failures and missing data
 - To add more CLI aliases, edit the `[tool.poetry.scripts]` section in `pyproject.toml`
 
-## License
-MIT License (or specify your own)
 
 ## Author
 Fariha Jeelani Tambitkar
